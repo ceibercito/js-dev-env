@@ -11,7 +11,8 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 80",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "generate-mock-data": "babel-node buildScripts/generateMockData"
   },
   "author": "Ceiber Garibay",
   "license": "MIT",
